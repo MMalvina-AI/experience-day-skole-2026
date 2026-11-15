@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Diagnóstico gratuito e anónimo: a sua empresa está preparada para a IA?">
+    <title>SKOLAE — A SUA EMPRESA ESTÁ PREPARADA PARA A IA?</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Inter', 'sans-serif'] },
+                    colors: {
+                        skolae: { black: '#191919', orange: '#FF9C25', dark: '#262626', hover: '#e68a1f' }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { background-color: #191919; color: #FFFFFF; font-family: 'Inter', sans-serif; -webkit-tap-highlight-color: transparent; }
+        .fade-in { animation: fadeIn 0.4s ease-out; }
+        .slide-up { animation: slideUp 0.4s ease-out; }
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+        @keyframes slideUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+        
+        /* Print Styles for PDF */
+        @media print {
+            body { background-color: #FFFFFF; color: #000000; }
+            .no-print { display: none !important; }
+            .print-text-black { color: #000000 !important; }
+            .print-bg-white { background-color: #FFFFFF !important; border: 1px solid #E5E7EB; }
+            #app-container { padding: 0 !important; margin: 0 !important; max-width: 100% !important; }
+        }
+        
+        /* Custom Radio Button */
+        .option-radio:checked + div {
+            border-color: #FF9C25;
+            background-color: rgba(255, 156, 37, 0.1);
+        }
+        .option-radio:checked + div .radio-circle {
+            border-color: #FF9C25;
+            background-color: #FF9C25;
+        }
+    </style>
+</head>
+<body class="antialiased min-h-screen flex flex-col relative pb-8 md:pb-20">
+
+    <!-- Header / Logo Area -->
+    <header class="w-full max-w-2xl mx-auto pt-8 pb-4 px-6 flex justify-center items-center no-print">
+        <div class="flex flex-col items-center">
+            <!-- Tenta carregar a imagem, se falhar mostra a versão em texto -->
+            <img src="Skolae-groupe-blanc-2-1024x290.png" alt="Skolae" class="h-10 md:h-12 object-contain opacity-100 mb-2" onerror="this.style.display='none'; document.getElementById('logo-text-fallback').style.display='block';">
+            
+            <!-- Fallback Tipográfico (visível apenas se a imagem falhar) -->
+            <div id="logo-text-fallback" style="display: none;" class="mb-2 text-center leading-tight">
+                <span class="text-4xl font-bold text-white tracking-tight">Skolae</span><br>
+                <span class="text-sm font-bold text-white tracking-widest uppercase">Formação</span>
+            </div>
+
+            <h2 class="text-skolae-orange font-bold text-sm tracking-widest uppercase mt-2 text-center">Experience Day 2026</h2>
+        </div>
+    </header>
+
+    <!-- Main Application Container (Removidos bloqueios de altura) -->
+    <main id="app-container" class="w-full max-w-2xl mx-auto px-4 flex-grow flex flex-col pb-8">
+        <!-- Content gets injected here by JavaScript -->
+    </main>
+
+<script>
+/* ==========================================
+   DATA & CONFIGURATION
+   ========================================== */
+const questions = [
+    {
+        id: 1, moment: 1,
+        title: "AVALIAÇÃO DE RESULTADOS",
+        text: "Na sua empresa, como são avaliados os resultados da utilização da IA?",
+        options: [
+            { text: "A. Ainda não avaliamos os resultados.", score: 0 },
+            { text: "B. Observamos ganhos individuais de produtividade, mas não os medimos formalmente.", score: 1 },
+            { text: "C. Medimos alguns ganhos de eficiência e produtividade.", score: 2 },
+            { text: "D. Avaliamos resultados com indicadores ligados aos objetivos do negócio.", score: 3 }
+        ],
+        message: "A questão não é apenas saber se a IA nos ajuda a trabalhar mais depressa. É perceber se está realmente a criar valor para a organização.",
+        recommendation: "Definir indicadores claros de avaliação de resultados da IA, alinhados aos objetivos estratégicos do negócio."
+    },
+    {
+        id: 2, moment: 1,
+        title: "AGENTES DE IA",
+        text: "Se a sua empresa começasse amanhã a delegar tarefas a agentes de IA, qual seria a sua situação?",
+        options: [
+            { text: "A. Ainda não identificámos tarefas que poderiam ser delegadas.", score: 0 },
+            { text: "B. Já identificámos oportunidades, mas não definimos regras nem responsabilidades.", score: 1 },
+            { text: "C. Temos alguns processos definidos, com supervisão humana.", score: 2 },
+            { text: "D. Já utilizamos agentes em processos delimitados, com regras, validação e acompanhamento.", score: 3 }
+        ],
+        message: "O desafio já não está apenas em saber utilizar a IA. Está também em saber o que lhe podemos delegar, em que condições e com que limites.",
+        recommendation: "Identificar processos específicos para delegação à IA e estabelecer limites, regras e requisitos de supervisão."
+    },
+    {
+        id: 3, moment: 2,
+        title: "VISIBILIDADE DAS FERRAMENTAS",
+        text: "A sua empresa sabe que ferramentas de IA estão a ser utilizadas pelos colaboradores?",
+        options: [
+            { text: "A. Não sabemos que ferramentas estão a ser utilizadas.", score: 0 },
+            { text: "B. Conhecemos algumas, mas não temos uma visão completa.", score: 1 },
+            { text: "C. Existe uma lista de ferramentas autorizadas, mas não acompanhamos a sua utilização.", score: 2 },
+            { text: "D. Temos ferramentas autorizadas e mecanismos de acompanhamento da sua utilização.", score: 3 }
+        ],
+        message: "O maior risco não é os colaboradores utilizarem IA. É a empresa desconhecer como e com que ferramentas a estão a utilizar.",
+        recommendation: "Mapear as ferramentas de IA utilizadas internamente e rever mecanismos de autorização e acompanhamento."
+    },
+    {
+        id: 4, moment: 2,
+        title: "PARTILHA DE INFORMAÇÃO",
+        text: "A sua empresa sabe que informação está a ser partilhada com as ferramentas de IA?",
+        options: [
+            { text: "A. Não temos conhecimento nem mecanismos de controlo.", score: 0 },
+            { text: "B. Existem recomendações informais, mas sem procedimentos definidos.", score: 1 },
+            { text: "C. Temos regras para a partilha de informação, mas a sua aplicação não é verificada regularmente.", score: 2 },
+            { text: "D. Temos regras, classificação de dados e mecanismos de controlo adequados.", score: 3 }
+        ],
+        message: "Não basta confiar que os colaboradores sabem proteger a informação. É necessário definir o que pode ser partilhado, com que ferramentas e em que condições.",
+        recommendation: "Classificar a informação empresarial e definir regras estritas de partilha com sistemas de Inteligência Artificial."
+    },
+    {
+        id: 5, moment: 2,
+        title: "RESPONSABILIDADE",
+        text: "Se a IA produzir uma decisão errada com impacto na empresa, estão definidas as responsabilidades?",
+        options: [
+            { text: "A. Não existem responsabilidades definidas.", score: 0 },
+            { text: "B. A responsabilidade depende de quem utiliza a ferramenta.", score: 1 },
+            { text: "C. Existem responsáveis definidos para algumas utilizações, mas não há critérios uniformes de validação.", score: 2 },
+            { text: "D. Existem responsáveis, regras de validação e procedimentos de resposta a incidentes.", score: 3 }
+        ],
+        message: "Podemos delegar tarefas à inteligência artificial, mas não podemos delegar a responsabilidade pelas consequências das decisões.",
+        recommendation: "Atribuir responsáveis claros para as saídas da IA e estabelecer procedimentos de validação humana obrigatória."
+    },
+    {
+        id: 6, moment: 3,
+        title: "ADOÇÃO ATUAL",
+        text: "Qual das seguintes situações descreve melhor a utilização atual da IA na sua empresa?",
+        options: [
+            { text: "A. Ainda não utilizamos IA de forma relevante.", score: 0 },
+            { text: "B. Alguns colaboradores utilizam IA por iniciativa própria.", score: 1 },
+            { text: "C. A empresa disponibiliza ferramentas, mas a utilização é pouco coordenada.", score: 2 },
+            { text: "D. A IA já está integrada em algumas atividades e processos, com orientação empresarial.", score: 3 }
+        ],
+        message: "A diferença não está apenas em utilizar IA, mas em passar da iniciativa individual para uma utilização estratégica, coordenada e capaz de gerar valor para a empresa.",
+        recommendation: "Transitar de iniciativas isoladas para uma estratégia empresarial coordenada de adoção da Inteligência Artificial."
+    },
+    {
+        id: 7, moment: 3,
+        title: "EVOLUÇÃO EM 2026",
+        text: "Qual foi a evolução da sua empresa no uso da inteligência artificial durante o ano de 2026?",
+        options: [
+            { text: "A. Ainda não iniciámos a utilização da IA.", score: 0 },
+            { text: "B. Começámos a experimentar ferramentas, sobretudo por iniciativa individual.", score: 1 },
+            { text: "C. Passámos a utilizar IA regularmente em algumas atividades, mas sem integração estruturada.", score: 2 },
+            { text: "D. Implementámos soluções de IA em processos definidos, com orientação e acompanhamento.", score: 3 },
+            { text: "E. Expandimos a utilização da IA, com processos redesenhados e resultados avaliados.", score: 4 }
+        ],
+        message: "O verdadeiro progresso não se mede pelo número de ferramentas de IA que uma empresa utiliza, mas pela forma como as integra no seu trabalho e transformam essa utilização em resultados.",
+        recommendation: "Integrar estruturalmente a IA nas rotinas de trabalho, avaliando sistematicamente a evolução e os resultados alcançados."
+    },
+    {
+        id: 8, moment: 4,
+        title: "PREPARAÇÃO DOS DADOS",
+        text: "Antes de partilhar dados empresariais com ferramentas de IA, os colaboradores sabem identificar e retirar a informação desnecessária ou sensível?",
+        options: [
+            { text: "A. Não existe formação ou orientação sobre esta prática.", score: 0 },
+            { text: "B. Alguns colaboradores fazem-no por iniciativa própria.", score: 1 },
+            { text: "C. Existem orientações e formação, mas a sua aplicação não é consistente.", score: 2 },
+            { text: "D. Os colaboradores são capacitados e existem procedimentos para verificar a adequação dos dados partilhados.", score: 3 }
+        ],
+        message: "Proteger a informação começa antes de a partilhar com a IA. Não basta saber utilizar as ferramentas; é essencial saber que dados podem ser utilizados e como os preparar em segurança.",
+        recommendation: "Promover formação contínua sobre minimização, proteção e anonimização de dados antes da sua partilha."
+    },
+    {
+        id: 9, moment: 5,
+        title: "COMPETÊNCIAS",
+        text: "Se amanhã a sua empresa disponibilizasse ferramentas avançadas de IA a todos os colaboradores, o que aconteceria?",
+        options: [
+            { text: "A. A maioria teria dificuldade em perceber como aplicá-las ao seu trabalho.", score: 0 },
+            { text: "B. Os colaboradores começariam a experimentar, mas sem orientação ou critérios comuns.", score: 1 },
+            { text: "C. Algumas equipas conseguiriam utilizá-las eficazmente, mas existiriam diferenças significativas de competências.", score: 2 },
+            { text: "D. As equipas teriam formação adequada às suas funções e capacidade para utilizar, avaliar e supervisionar os resultados.", score: 3 }
+        ],
+        message: "Disponibilizar inteligência artificial não significa desenvolver competências. O verdadeiro investimento está em preparar as pessoas para a utilizar com autonomia, sentido crítico e responsabilidade.",
+        recommendation: "Desenvolver programas de formação prática específicos por função, centrados no uso crítico e autónomo da IA."
+    },
+    {
+        id: 10, moment: 5,
+        title: "TRANSFORMAÇÃO DE PROCESSOS",
+        text: "Se retirássemos amanhã todas as ferramentas de IA da sua empresa, o que mudaria realmente na forma como o trabalho é realizado?",
+        options: [
+            { text: "A. Praticamente nada, porque a IA ainda não faz parte das atividades habituais.", score: 0 },
+            { text: "B. Algumas tarefas demorariam mais tempo, mas os processos continuariam iguais.", score: 1 },
+            { text: "C. Algumas equipas perderiam melhorias relevantes de produtividade e eficiência.", score: 2 },
+            { text: "D. Vários processos teriam de ser reorganizados, porque a IA já está integrada na forma como a empresa funciona.", score: 3 }
+        ],
+        message: "Uma empresa não se transforma por fazer as mesmas tarefas mais depressa. Transforma-se quando repensa a forma de trabalhar e utiliza a IA para criar novas capacidades e resultados.",
+        recommendation: "Identificar processos-piloto estratégicos para redesenhar de raiz utilizando as capacidades da inteligência artificial."
+    },
+    {
+        id: 11, moment: 6,
+        title: "CRIAÇÃO DE VALOR",
+        text: "Quando a sua empresa implementa uma solução de IA, como determina se o investimento está realmente a gerar valor?",
+        options: [
+            { text: "A. Não existem critérios definidos para avaliar os resultados.", score: 0 },
+            { text: "B. A avaliação baseia-se sobretudo na perceção de que os colaboradores trabalham mais depressa.", score: 1 },
+            { text: "C. São medidos alguns indicadores de eficiência, mas sem uma comparação sistemática com a situação anterior.", score: 2 },
+            { text: "D. São definidos indicadores antes da implementação, avaliando eficiência, qualidade, riscos e impacto nos resultados do negócio.", score: 3 }
+        ],
+        message: "O verdadeiro retorno da IA não está no tempo que parece poupar, mas nas melhorias que a empresa consegue medir, demonstrar e transformar em valor para o negócio.",
+        recommendation: "Definir indicadores precisos e uma situação inicial ('baseline') de comparação antes de implementar soluções de IA."
+    }
+];
+
+const totalMoments = 6;
+const levels = [
+    { max: 25, label: "Preparação Inicial", desc: "A sua empresa está a dar os primeiros passos. É crucial construir alicerces de proteção de dados e alfabetização em IA." },
+    { max: 50, label: "Preparação Emergente", desc: "Já existem iniciativas, mas carecem de alinhamento e regras. É o momento de coordenar esforços e definir responsabilidades." },
+    { max: 75, label: "Preparação em Desenvolvimento", desc: "A IA já faz parte das operações, com regras estabelecidas. O foco deve ser a expansão segura e o redesenho de processos." },
+    { max: 100, label: "Preparação Consolidada", desc: "Existe uma abordagem estratégica e estruturada. O objetivo é manter o acompanhamento rigoroso e a medição do valor gerado." }
+];
+
+/* ==========================================
+   STATE MANAGEMENT
+   ========================================== */
+let appState = {
+    participantId: null,
+    currentScreen: 'home', // 'home', 'moment', 'message', 'results'
+    currentQuestionIndex: 0,
+    answers: {} // { qId: optionIndex }
+};
+
+// Load state from local storage
+function loadState() {
+    let saved = null;
+    try { saved = localStorage.getItem('skolae_ia_diagnostic'); } catch (e) {}
+    try {
+        if (saved) {
+            appState = { ...appState, ...JSON.parse(saved) };
+        }
+    } catch (e) {}
+    if (!appState.participantId) {
+        appState.participantId = 'USR-' + Math.random().toString(36).substr(2, 9).toUpperCase();
+    }
+}
+
+function saveState() {
+    try {
+        localStorage.setItem('skolae_ia_diagnostic', JSON.stringify({
+            participantId: appState.participantId,
+            currentScreen: appState.currentScreen,
+            currentQuestionIndex: appState.currentQuestionIndex,
+            answers: appState.answers
+        }));
+    } catch (e) { /* armazenamento indisponível: a app continua a funcionar em memória */ }
+}
+
+/* ==========================================
+   CORE LOGIC & ROUTING
+   ========================================== */
+function init() {
+    loadState();
+    render();
+}
+
+function resetApp() {
+    try { localStorage.removeItem('skolae_ia_diagnostic'); } catch (e) {}
+    appState = {
+        participantId: 'USR-' + Math.random().toString(36).substr(2, 9).toUpperCase(),
+        currentScreen: 'home',
+        currentQuestionIndex: 0,
+        answers: {}
+    };
+    window.scrollTo(0, 0);
+    render();
+}
+
+function startDiagnostic() {
+    appState.currentScreen = 'moment';
+    
+    // Find the right question to start/resume
+    let targetIndex = 0;
+    for (let i = 0; i < questions.length; i++) {
+        if (appState.answers[questions[i].id] === undefined) {
+            targetIndex = i;
+            break;
+        }
+        if (i === questions.length - 1) {
+            // All answered
+            appState.currentScreen = 'results';
+        }
+    }
+    
+    appState.currentQuestionIndex = appState.currentScreen === 'moment' ? targetIndex : appState.currentQuestionIndex;
+    saveState();
+    window.scrollTo(0, 0); // Volta ao topo ao mudar de ecrã
+    render();
+}
+
+function submitAnswer(qId, optionIndex) {
+    appState.answers[qId] = optionIndex;
+    appState.currentScreen = 'message';
+    saveState();
+    window.scrollTo(0, 0);
+    render();
+}
+
+function nextAction() {
+    const nextQIndex = appState.currentQuestionIndex + 1;
+    
+    if (nextQIndex < questions.length) {
+        appState.currentQuestionIndex = nextQIndex;
+        appState.currentScreen = 'moment';
+    } else {
+        // Finished all questions
+        appState.currentScreen = 'results';
+    }
+    
+    saveState();
+    window.scrollTo(0, 0);
+    render();
+}
+
+/* ==========================================
+   SCORING LOGIC
+   ========================================== */
+function calculateResults() {
+    let obtainedPoints = 0;
+    let maxPoints = 0;
+    let answeredCount = 0;
+    let categoryScores = [];
+
+    questions.forEach(q => {
+        const ansIndex = appState.answers[q.id];
+        if (ansIndex !== undefined) {
+            answeredCount++;
+            const points = q.options[ansIndex].score;
+            obtainedPoints += points;
+            // Q7 has max 4 points, others max 3
+            const qMax = Math.max(...q.options.map(o => o.score));
+            maxPoints += qMax;
+            
+            categoryScores.push({
+                id: q.id,
+                title: q.title,
+                points: points,
+                max: qMax,
+                percentage: (points / qMax) * 100,
+                recommendation: q.recommendation
+            });
+        }
+    });
+
+    const isComplete = answeredCount >= 7; // Minimum threshold
+    const finalScore = isComplete ? Math.round((obtainedPoints / maxPoints) * 100) : null;
+    
+    let classification = null;
+    if (isComplete) {
+        classification = levels.find(l => finalScore <= l.max);
+    }
+
+    // Sort to find strengths and weaknesses
+    categoryScores.sort((a, b) => b.percentage - a.percentage);
+    const strengths = categoryScores.slice(0, 3);
+    const weaknesses = [...categoryScores].sort((a, b) => a.percentage - b.percentage).slice(0, 3);
+
+    return { isComplete, finalScore, classification, strengths, weaknesses, answeredCount };
+}
+
+/* ==========================================
+   RENDERERS
+   ========================================== */
+function render() {
+    const container = document.getElementById('app-container');
+    container.innerHTML = ''; // Clear
+
+    switch (appState.currentScreen) {
+        case 'home': container.innerHTML = getHomeHTML(); break;
+        case 'moment': container.innerHTML = getQuestionHTML(); setupQuestionListeners(); break;
+        case 'message': container.innerHTML = getMessageHTML(); break;
+        case 'results': container.innerHTML = getResultsHTML(); break;
+    }
+}
+
+function getHomeHTML() {
+    // Removido "my-auto" para não bloquear o scroll no telemóvel
+    return `
+        <div class="fade-in bg-skolae-dark rounded-2xl p-6 md:p-8 border border-gray-800 shadow-2xl text-center mt-4">
+            <h1 class="text-2xl md:text-3xl font-bold mb-4 leading-tight">A SUA EMPRESA ESTÁ <span class="text-skolae-orange">PREPARADA PARA A IA?</span></h1>
+            <p class="text-gray-300 text-sm md:text-base mb-6 leading-relaxed font-light">
+                "Descubra como a sua organização está a transformar o potencial da inteligência artificial em valor."
+            </p>
+            <div class="bg-black/50 rounded-xl p-5 mb-8 text-left border border-gray-800">
+                <p class="text-sm text-gray-300 mb-3"><i class="fas fa-info-circle text-skolae-orange mr-2"></i> Ao longo desta experiência, vai descobrir como a sua empresa está preparada para utilizar inteligência artificial, proteger a informação, desenvolver competências e criar valor.</p>
+                <ul class="text-sm text-gray-400 space-y-2 mt-4 ml-1">
+                    <li><i class="fas fa-list-ol mr-2 opacity-70"></i> 11 perguntas em 6 etapas</li>
+                    <li><i class="far fa-clock mr-2 opacity-70"></i> 4 a 6 minutos no total</li>
+                    <li><i class="fas fa-user-secret mr-2 opacity-70"></i> Participação 100% anónima</li>
+                </ul>
+            </div>
+            <button onclick="startDiagnostic()" class="w-full bg-skolae-orange hover:bg-skolae-hover text-black font-semibold text-lg py-4 rounded-xl transition-all shadow-[0_0_15px_rgba(255,156,37,0.3)] hover:shadow-[0_0_25px_rgba(255,156,37,0.5)] transform hover:-translate-y-0.5">
+                Iniciar Diagnóstico
+            </button>
+            <p class="text-xs text-gray-500 mt-5 italic">
+                Nota: As respostas representam a sua perceção e não constituem uma auditoria empresarial.
+            </p>
+        </div>
+    `;
+}
+
+function getQuestionHTML() {
+    const q = questions[appState.currentQuestionIndex];
+    const totalQ = questions.length;
+    const currentNum = appState.currentQuestionIndex + 1;
+    const progress = ((currentNum - 1) / totalQ) * 100;
+    
+    const prevAnswer = appState.answers[q.id];
+
+    let optionsHTML = q.options.map((opt, idx) => `
+        <label class="block cursor-pointer relative slide-up" style="animation-delay: ${idx * 0.1}s">
+            <input type="radio" name="q${q.id}" value="${idx}" class="peer sr-only option-radio" ${prevAnswer === idx ? 'checked' : ''}>
+            <div class="p-4 rounded-xl border border-gray-700 bg-black/40 hover:bg-gray-800 transition-all flex items-start gap-4">
+                <div class="mt-0.5 w-5 h-5 rounded-full border-2 border-gray-500 flex-shrink-0 radio-circle transition-colors flex items-center justify-center">
+                    <div class="w-2.5 h-2.5 rounded-full bg-black scale-0 transition-transform peer-checked:scale-100"></div>
+                </div>
+                <span class="text-sm md:text-base text-gray-200 font-medium">${opt.text}</span>
+            </div>
+        </label>
+    `).join('');
+
+    return `
+        <div class="fade-in flex flex-col pt-4">
+            <div class="mb-6 flex justify-between items-end">
+                <div>
+                    <span class="text-skolae-orange text-xs font-bold tracking-widest uppercase mb-1 block">Momento ${q.moment}</span>
+                    <h3 class="text-gray-400 text-sm">Pergunta ${currentNum} de ${totalQ}</h3>
+                </div>
+            </div>
+            
+            <div class="w-full bg-gray-800 rounded-full h-1.5 mb-8">
+                <div class="bg-skolae-orange h-1.5 rounded-full transition-all duration-500" style="width: ${progress}%"></div>
+            </div>
+
+            <div class="bg-skolae-dark border border-gray-800 rounded-2xl p-6 md:p-8 shadow-xl mb-6">
+                <h2 class="text-xl md:text-2xl font-semibold mb-2">${q.title}</h2>
+                <p class="text-gray-300 mb-6 text-sm md:text-base">${q.text}</p>
+                
+                <div class="space-y-3" id="options-container">
+                    ${optionsHTML}
+                </div>
+            </div>
+
+            <button id="btn-confirm" class="w-full bg-skolae-orange hover:bg-skolae-hover text-black font-semibold text-lg py-4 rounded-xl transition-all shadow-lg mt-4 disabled:opacity-50 disabled:cursor-not-allowed" ${prevAnswer === undefined ? 'disabled' : ''}>
+                Confirmar Resposta
+            </button>
+        </div>
+    `;
+}
+
+function setupQuestionListeners() {
+    const radios = document.querySelectorAll('.option-radio');
+    const btn = document.getElementById('btn-confirm');
+    
+    radios.forEach(radio => {
+        radio.addEventListener('change', () => {
+            btn.disabled = false;
+        });
+    });
+
+    btn.addEventListener('click', () => {
+        const selected = document.querySelector('.option-radio:checked');
+        if (selected) {
+            const qId = questions[appState.currentQuestionIndex].id;
+            submitAnswer(qId, parseInt(selected.value));
+        }
+    });
+}
+
+function getMessageHTML() {
+    const q = questions[appState.currentQuestionIndex];
+    return `
+        <div class="fade-in bg-skolae-dark border-l-4 border-skolae-orange rounded-r-2xl p-8 shadow-2xl flex flex-col justify-center items-center text-center mt-8">
+            <div class="w-16 h-16 rounded-full bg-skolae-orange/10 flex items-center justify-center mb-6">
+                <i class="fas fa-lightbulb text-3xl text-skolae-orange"></i>
+            </div>
+            <p class="text-lg md:text-xl font-medium text-gray-200 leading-relaxed mb-10 italic">
+                "${q.message}"
+            </p>
+            <button onclick="nextAction()" class="w-full bg-white hover:bg-gray-200 text-black font-semibold text-base py-4 rounded-xl transition-colors">
+                Continuar <i class="fas fa-arrow-right ml-2"></i>
+            </button>
+        </div>
+    `;
+}
+
+function getResultsHTML() {
+    const res = calculateResults();
+    
+    if (!res.isComplete) {
+        return `
+            <div class="fade-in bg-skolae-dark rounded-2xl p-8 border border-gray-800 text-center mt-8">
+                <i class="fas fa-exclamation-triangle text-4xl text-yellow-500 mb-4"></i>
+                <h2 class="text-xl font-bold mb-2">Diagnóstico Incompleto</h2>
+                <p class="text-gray-400 mb-6">Respondeu a ${res.answeredCount} de ${questions.length} perguntas. São necessárias pelo menos 7 respostas para calcular um perfil fidedigno.</p>
+                <button onclick="appState.currentScreen='home'; render();" class="w-full bg-white hover:bg-gray-200 text-black font-semibold text-base py-4 rounded-xl transition-colors">
+                    Voltar ao Início
+                </button>
+            </div>
+        `;
+    }
+
+    const weaknessesHTML = res.weaknesses.map(w => `
+        <div class="mb-4 bg-black/30 p-4 rounded-lg border-l-2 border-skolae-orange print-bg-white">
+            <h4 class="font-bold text-white text-sm mb-1 print-text-black"><i class="fas fa-exclamation-circle text-skolae-orange mr-2"></i> ${w.title}</h4>
+            <p class="text-sm text-gray-400 mb-2 print-text-black">Prioridade de melhoria identificada.</p>
+            <p class="text-sm text-skolae-orange bg-skolae-orange/10 p-2 rounded inline-block w-full">
+                <i class="fas fa-arrow-right mr-1 text-xs"></i> <strong>Recomendação:</strong> ${w.recommendation}
+            </p>
+        </div>
+    `).join('');
+
+    return `
+        <div id="pdf-content" class="fade-in bg-skolae-dark rounded-2xl p-6 md:p-8 border border-gray-800 shadow-2xl mb-8 mt-4 print-bg-white">
+            <div class="text-center mb-8">
+                <h2 class="text-skolae-orange font-bold text-xs tracking-widest uppercase mb-2">O Diagnóstico da sua Empresa</h2>
+                <div class="flex justify-center items-center my-6">
+                    <div class="relative w-32 h-32 flex items-center justify-center rounded-full bg-black border-4 border-gray-800 print-bg-white">
+                        <svg class="absolute inset-0 w-full h-full transform -rotate-90">
+                            <circle cx="60" cy="60" r="56" fill="none" stroke="currentColor" stroke-width="8" class="text-gray-800"></circle>
+                            <circle cx="60" cy="60" r="56" fill="none" stroke="#FF9C25" stroke-width="8" stroke-dasharray="351" stroke-dashoffset="${351 - (351 * res.finalScore) / 100}" class="transition-all duration-1000 ease-out"></circle>
+                        </svg>
+                        <span class="text-3xl font-bold print-text-black">${res.finalScore}<span class="text-sm text-gray-500">%</span></span>
+                    </div>
+                </div>
+                <h3 class="text-2xl font-bold text-white mb-2 print-text-black">${res.classification.label}</h3>
+                <p class="text-sm text-gray-400 max-w-sm mx-auto print-text-black">${res.classification.desc}</p>
+            </div>
+
+            <hr class="border-gray-800 my-6">
+
+            <div class="mb-8">
+                <h4 class="text-sm font-bold text-gray-300 uppercase tracking-wider mb-4 flex items-center print-text-black">
+                    <i class="fas fa-tools mr-2 text-skolae-orange"></i> Prioridades de Ação Recomendadas
+                </h4>
+                <div class="text-left">
+                    ${weaknessesHTML}
+                </div>
+            </div>
+
+            <div class="bg-gray-900/50 p-4 rounded-xl border border-gray-800 text-xs text-gray-500 text-center print-bg-white print-text-black">
+                Os resultados apresentados resultam de um autodiagnóstico indicativo e não substituem uma auditoria formal ou aconselhamento especializado. ID da Sessão: ${appState.participantId}
+            </div>
+        </div>
+
+        <button onclick="downloadPDF()" class="w-full bg-white hover:bg-gray-200 text-black font-bold text-lg py-4 rounded-xl transition-all shadow-lg flex justify-center items-center mb-3 no-print">
+            <i class="fas fa-file-pdf mr-2"></i> Guardar o meu Diagnóstico
+        </button>
+        <button id="btn-copy" onclick="copyResults()" class="w-full bg-skolae-dark border border-gray-700 hover:bg-gray-800 text-white font-semibold text-base py-3 rounded-xl transition-colors flex justify-center items-center mb-3 no-print">
+            <i class="far fa-copy mr-2"></i> Copiar resumo
+        </button>
+        <button onclick="resetApp()" class="w-full text-gray-400 hover:text-white text-sm py-3 mb-6 no-print">
+            <i class="fas fa-rotate-left mr-2"></i> Refazer o diagnóstico
+        </button>
+    `;
+}
+
+function downloadPDF() {
+    try { window.print(); } catch (e) { copyResults(); }
+}
+
+function copyResults() {
+    const res = calculateResults();
+    if (!res.isComplete) return;
+    const lines = [
+        'Diagnóstico IA – Skolae Experience Day 2026',
+        'Nível: ' + res.classification.label + ' (' + res.finalScore + '%)',
+        res.classification.desc,
+        '',
+        'Prioridades de ação recomendadas:',
+        ...res.weaknesses.map((w, i) => (i + 1) + '. ' + w.title + ' – ' + w.recommendation)
+    ].join('\n');
+    const btn = document.getElementById('btn-copy');
+    const done = ok => { if (btn) btn.innerHTML = ok ? '<i class="fas fa-check mr-2"></i> Copiado' : 'Não foi possível copiar'; };
+    try {
+        navigator.clipboard.writeText(lines).then(() => done(true), () => done(false));
+    } catch (e) { done(false); }
+}
+
+// Start app
+window.onload = init;
+</script>
+</body>
+</html>
