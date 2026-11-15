@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Diagnóstico gratuito e anónimo: a sua empresa está preparada para a IA?">
+    <title>SKOLAE — A SUA EMPRESA ESTÁ PREPARADA PARA A IA?</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <style>*,:after,:before{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgba(59,130,246,.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgba(59,130,246,.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/*! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com*/*,:after,:before{box-sizing:border-box;border:0 solid #e5e7eb}:after,:before{--tw-content:""}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;-o-tab-size:4;tab-size:4;font-family:Inter,sans-serif;font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0}fieldset,legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::-moz-placeholder,textarea::-moz-placeholder{opacity:1;color:#9ca3af}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.container{width:100%}@media (min-width:640px){.container{max-width:640px}}@media (min-width:768px){.container{max-width:768px}}@media (min-width:1024px){.container{max-width:1024px}}@media (min-width:1280px){.container{max-width:1280px}}@media (min-width:1536px){.container{max-width:1536px}}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border-width:0}.absolute{position:absolute}.relative{position:relative}.inset-0{inset:0}.mx-auto{margin-left:auto;margin-right:auto}.my-6{margin-top:1.5rem;margin-bottom:1.5rem}.my-auto{margin-top:auto;margin-bottom:auto}.mb-1{margin-bottom:.25rem}.mb-10{margin-bottom:2.5rem}.mb-2{margin-bottom:.5rem}.mb-3{margin-bottom:.75rem}.mb-4{margin-bottom:1rem}.mb-6{margin-bottom:1.5rem}.mb-8{margin-bottom:2rem}.ml-1{margin-left:.25rem}.ml-2{margin-left:.5rem}.mr-1{margin-right:.25rem}.mr-2{margin-right:.5rem}.mt-0\.5{margin-top:.125rem}.mt-2{margin-top:.5rem}.mt-4{margin-top:1rem}.mt-5{margin-top:1.25rem}.mt-8{margin-top:2rem}.block{display:block}.inline-block{display:inline-block}.flex{display:flex}.h-1\.5{height:.375rem}.h-10{height:2.5rem}.h-16{height:4rem}.h-2\.5{height:.625rem}.h-32{height:8rem}.h-5{height:1.25rem}.h-full{height:100%}.min-h-screen{min-height:100vh}.w-16{width:4rem}.w-2\.5{width:.625rem}.w-32{width:8rem}.w-5{width:1.25rem}.w-full{width:100%}.max-w-2xl{max-width:42rem}.max-w-sm{max-width:24rem}.flex-shrink-0{flex-shrink:0}.flex-grow{flex-grow:1}.-rotate-90{--tw-rotate:-90deg}.-rotate-90,.scale-0{transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.scale-0{--tw-scale-x:0;--tw-scale-y:0}.transform{transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.cursor-pointer{cursor:pointer}.flex-col{flex-direction:column}.items-start{align-items:flex-start}.items-end{align-items:flex-end}.items-center{align-items:center}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-4{gap:1rem}.space-y-2>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(.5rem*(1 - var(--tw-space-y-reverse)));margin-bottom:calc(.5rem*var(--tw-space-y-reverse))}.space-y-3>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(.75rem*(1 - var(--tw-space-y-reverse)));margin-bottom:calc(.75rem*var(--tw-space-y-reverse))}.rounded{border-radius:.25rem}.rounded-2xl{border-radius:1rem}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:.5rem}.rounded-xl{border-radius:.75rem}.rounded-r-2xl{border-top-right-radius:1rem;border-bottom-right-radius:1rem}.border{border-width:1px}.border-2{border-width:2px}.border-4{border-width:4px}.border-l-2{border-left-width:2px}.border-l-4{border-left-width:4px}.border-gray-500{--tw-border-opacity:1;border-color:rgb(107 114 128/var(--tw-border-opacity,1))}.border-gray-700{--tw-border-opacity:1;border-color:rgb(55 65 81/var(--tw-border-opacity,1))}.border-gray-800{--tw-border-opacity:1;border-color:rgb(31 41 55/var(--tw-border-opacity,1))}.border-skolae-orange{--tw-border-opacity:1;border-color:rgb(255 156 37/var(--tw-border-opacity,1))}.bg-black{--tw-bg-opacity:1;background-color:rgb(0 0 0/var(--tw-bg-opacity,1))}.bg-black\/30{background-color:rgba(0,0,0,.3)}.bg-black\/40{background-color:rgba(0,0,0,.4)}.bg-black\/50{background-color:rgba(0,0,0,.5)}.bg-gray-800{--tw-bg-opacity:1;background-color:rgb(31 41 55/var(--tw-bg-opacity,1))}.bg-gray-900\/50{background-color:rgba(17,24,39,.5)}.bg-skolae-dark{--tw-bg-opacity:1;background-color:rgb(38 38 38/var(--tw-bg-opacity,1))}.bg-skolae-orange{--tw-bg-opacity:1;background-color:rgb(255 156 37/var(--tw-bg-opacity,1))}.bg-skolae-orange\/10{background-color:rgba(255,156,37,.1)}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255/var(--tw-bg-opacity,1))}.object-contain{-o-object-fit:contain;object-fit:contain}.p-2{padding:.5rem}.p-4{padding:1rem}.p-5{padding:1.25rem}.p-6{padding:1.5rem}.p-8{padding:2rem}.px-4{padding-left:1rem;padding-right:1rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.py-3{padding-top:.75rem;padding-bottom:.75rem}.py-4{padding-top:1rem}.pb-4,.py-4{padding-bottom:1rem}.pb-8{padding-bottom:2rem}.pt-4{padding-top:1rem}.pt-8{padding-top:2rem}.text-left{text-align:left}.text-center{text-align:center}.text-2xl{font-size:1.5rem;line-height:2rem}.text-3xl{font-size:1.875rem;line-height:2.25rem}.text-4xl{font-size:2.25rem;line-height:2.5rem}.text-base{font-size:1rem;line-height:1.5rem}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-xs{font-size:.75rem;line-height:1rem}.font-bold{font-weight:700}.font-light{font-weight:300}.font-medium{font-weight:500}.font-semibold{font-weight:600}.uppercase{text-transform:uppercase}.italic{font-style:italic}.leading-relaxed{line-height:1.625}.leading-tight{line-height:1.25}.tracking-tight{letter-spacing:-.025em}.tracking-wider{letter-spacing:.05em}.tracking-widest{letter-spacing:.1em}.text-black{--tw-text-opacity:1;color:rgb(0 0 0/var(--tw-text-opacity,1))}.text-gray-200{--tw-text-opacity:1;color:rgb(229 231 235/var(--tw-text-opacity,1))}.text-gray-300{--tw-text-opacity:1;color:rgb(209 213 219/var(--tw-text-opacity,1))}.text-gray-400{--tw-text-opacity:1;color:rgb(156 163 175/var(--tw-text-opacity,1))}.text-gray-500{--tw-text-opacity:1;color:rgb(107 114 128/var(--tw-text-opacity,1))}.text-gray-800{--tw-text-opacity:1;color:rgb(31 41 55/var(--tw-text-opacity,1))}.text-skolae-orange{--tw-text-opacity:1;color:rgb(255 156 37/var(--tw-text-opacity,1))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity,1))}.text-yellow-500{--tw-text-opacity:1;color:rgb(234 179 8/var(--tw-text-opacity,1))}.antialiased{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.opacity-100{opacity:1}.opacity-70{opacity:.7}.shadow-2xl{--tw-shadow:0 25px 50px -12px rgba(0,0,0,.25);--tw-shadow-colored:0 25px 50px -12px var(--tw-shadow-color)}.shadow-2xl,.shadow-\[0_0_15px_rgba\(255\2c 156\2c 37\2c 0\.3\)\]{box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)}.shadow-\[0_0_15px_rgba\(255\2c 156\2c 37\2c 0\.3\)\]{--tw-shadow:0 0 15px rgba(255,156,37,.3);--tw-shadow-colored:0 0 15px var(--tw-shadow-color)}.shadow-lg{--tw-shadow:0 10px 15px -3px rgba(0,0,0,.1),0 4px 6px -4px rgba(0,0,0,.1);--tw-shadow-colored:0 10px 15px -3px var(--tw-shadow-color),0 4px 6px -4px var(--tw-shadow-color)}.shadow-lg,.shadow-xl{box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)}.shadow-xl{--tw-shadow:0 20px 25px -5px rgba(0,0,0,.1),0 8px 10px -6px rgba(0,0,0,.1);--tw-shadow-colored:0 20px 25px -5px var(--tw-shadow-color),0 8px 10px -6px var(--tw-shadow-color)}.transition-all{transition-property:all;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:.15s}.transition-colors{transition-property:color,background-color,border-color,text-decoration-color,fill,stroke;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:.15s}.transition-transform{transition-property:transform;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:.15s}.duration-1000{transition-duration:1s}.duration-500{transition-duration:.5s}.ease-out{transition-timing-function:cubic-bezier(0,0,.2,1)}.hover\:-translate-y-0\.5:hover{--tw-translate-y:-0.125rem;transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.hover\:bg-gray-200:hover{--tw-bg-opacity:1;background-color:rgb(229 231 235/var(--tw-bg-opacity,1))}.hover\:bg-gray-800:hover{--tw-bg-opacity:1;background-color:rgb(31 41 55/var(--tw-bg-opacity,1))}.hover\:bg-skolae-hover:hover{--tw-bg-opacity:1;background-color:rgb(230 138 31/var(--tw-bg-opacity,1))}.hover\:text-white:hover{--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity,1))}.hover\:shadow-\[0_0_25px_rgba\(255\2c 156\2c 37\2c 0\.5\)\]:hover{--tw-shadow:0 0 25px rgba(255,156,37,.5);--tw-shadow-colored:0 0 25px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)}.disabled\:cursor-not-allowed:disabled{cursor:not-allowed}.disabled\:opacity-50:disabled{opacity:.5}.peer:checked~.peer-checked\:scale-100{--tw-scale-x:1;--tw-scale-y:1;transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}@media (min-width:768px){.md\:h-12{height:3rem}.md\:p-8{padding:2rem}.md\:pb-20{padding-bottom:5rem}.md\:text-2xl{font-size:1.5rem;line-height:2rem}.md\:text-3xl{font-size:1.875rem;line-height:2.25rem}.md\:text-base{font-size:1rem;line-height:1.5rem}.md\:text-xl{font-size:1.25rem;line-height:1.75rem}}.fas,.far{display:inline-block;width:1em;height:1em;vertical-align:-.125em;background-color:currentColor;-webkit-mask-repeat:no-repeat;mask-repeat:no-repeat;-webkit-mask-size:contain;mask-size:contain;-webkit-mask-position:center;mask-position:center}.fa-info-circle{-webkit-mask-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'/%3E%3Cpath d='M12 16v-4M12 8h.01'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'/%3E%3Cpath d='M12 16v-4M12 8h.01'/%3E%3C/svg%3E")}.fa-list-ol{-webkit-mask-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M10 6h11M10 12h11M10 18h11M4 6h1v4M4 10h2M6 18H4c0-1 2-2 2-3s-1-1.5-2-1'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M10 6h11M10 12h11M10 18h11M4 6h1v4M4 10h2M6 18H4c0-1 2-2 2-3s-1-1.5-2-1'/%3E%3C/svg%3E")}.fa-clock{-webkit-mask-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'/%3E%3Cpath d='M12 6v6l4 2'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'/%3E%3Cpath d='M12 6v6l4 2'/%3E%3C/svg%3E")}.fa-user-secret{-webkit-mask-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='8' r='4'/%3E%3Cpath d='M4 21v-1a6 6 0 0 1 6-6h4a6 6 0 0 1 6 6v1'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='8' r='4'/%3E%3Cpath d='M4 21v-1a6 6 0 0 1 6-6h4a6 6 0 0 1 6 6v1'/%3E%3C/svg%3E")}.fa-lightbulb{-webkit-mask-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5M9 18h6M10 22h4'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5M9 18h6M10 22h4'/%3E%3C/svg%3E")}.fa-arrow-right{-webkit-mask-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12h14M12 5l7 7-7 7'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12h14M12 5l7 7-7 7'/%3E%3C/svg%3E")}.fa-exclamation-circle{-webkit-mask-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'/%3E%3Cpath d='M12 8v4M12 16h.01'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'/%3E%3Cpath d='M12 8v4M12 16h.01'/%3E%3C/svg%3E")}.fa-exclamation-triangle{-webkit-mask-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0zM12 9v4M12 17h.01'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0zM12 9v4M12 17h.01'/%3E%3C/svg%3E")}.fa-tools{-webkit-mask-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z'/%3E%3C/svg%3E")}.fa-file-pdf{-webkit-mask-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8zM14 2v6h6'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8zM14 2v6h6'/%3E%3C/svg%3E")}.fa-copy{-webkit-mask-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='9' y='9' width='13' height='13' rx='2'/%3E%3Cpath d='M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='9' y='9' width='13' height='13' rx='2'/%3E%3Cpath d='M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1'/%3E%3C/svg%3E")}.fa-rotate-left{-webkit-mask-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8M3 3v5h5'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8M3 3v5h5'/%3E%3C/svg%3E")}.fa-check{-webkit-mask-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20 6 9 17l-5-5'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20 6 9 17l-5-5'/%3E%3C/svg%3E")}</style>
+    <style>
+        body { background-color: #191919; color: #FFFFFF; font-family: 'Inter', sans-serif; -webkit-tap-highlight-color: transparent; }
+        .fade-in { animation: fadeIn 0.4s ease-out; }
+        .slide-up { animation: slideUp 0.4s ease-out; }
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+        @keyframes slideUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+        
+        /* Print Styles for PDF */
+        @media print {
+            body { background-color: #FFFFFF; color: #000000; }
+            .no-print { display: none !important; }
+            .print-text-black { color: #000000 !important; }
+            .print-bg-white { background-color: #FFFFFF !important; border: 1px solid #E5E7EB; }
+            #app-container { padding: 0 !important; margin: 0 !important; max-width: 100% !important; }
+        }
+        
+        /* Custom Radio Button */
+        .option-radio:checked + div {
+            border-color: #FF9C25;
+            background-color: rgba(255, 156, 37, 0.1);
+        }
+        .option-radio:checked + div .radio-circle {
+            border-color: #FF9C25;
+            background-color: #FF9C25;
+        }
+    </style>
+</head>
+<body class="antialiased min-h-screen flex flex-col relative pb-8 md:pb-20">
+
+    <!-- Header / Logo Area -->
+    <header class="w-full max-w-2xl mx-auto pt-8 pb-4 px-6 flex justify-center items-center no-print">
+        <div class="flex flex-col items-center">
+            <!-- Tenta carregar a imagem, se falhar mostra a versão em texto -->
+            <img src="Skolae-groupe-blanc-2-1024x290.png" alt="Skolae" class="h-10 md:h-12 object-contain opacity-100 mb-2" onerror="this.style.display='none'; document.getElementById('logo-text-fallback').style.display='block';">
+            
+            <!-- Fallback Tipográfico (visível apenas se a imagem falhar) -->
+            <div id="logo-text-fallback" style="display: none;" class="mb-2 text-center leading-tight">
+                <span class="text-4xl font-bold text-white tracking-tight">Skolae</span><br>
+                <span class="text-sm font-bold text-white tracking-widest uppercase">Formação</span>
+            </div>
+
+            <h2 class="text-skolae-orange font-bold text-sm tracking-widest uppercase mt-2 text-center">Experience Day 2026</h2>
+        </div>
+    </header>
+
+    <!-- Main Application Container (Removidos bloqueios de altura) -->
+    <main id="app-container" class="w-full max-w-2xl mx-auto px-4 flex-grow flex flex-col pb-8">
+        <!-- Content gets injected here by JavaScript -->
+    </main>
+
+<script>
+/* ==========================================
+   DATA & CONFIGURATION
+   ========================================== */
+const questions = [
+    {
+        id: 1, moment: 1,
+        title: "AVALIAÇÃO DE RESULTADOS",
+        text: "Na sua empresa, como são avaliados os resultados da utilização da IA?",
+        options: [
+            { text: "A. Ainda não avaliamos os resultados.", score: 0 },
+            { text: "B. Observamos ganhos individuais de produtividade, mas não os medimos formalmente.", score: 1 },
+            { text: "C. Medimos alguns ganhos de eficiência e produtividade.", score: 2 },
+            { text: "D. Avaliamos resultados com indicadores ligados aos objetivos do negócio.", score: 3 }
+        ],
+        message: "A questão não é apenas saber se a IA nos ajuda a trabalhar mais depressa. É perceber se está realmente a criar valor para a organização.",
+        recommendation: "Definir indicadores claros de avaliação de resultados da IA, alinhados aos objetivos estratégicos do negócio."
+    },
+    {
+        id: 2, moment: 1,
+        title: "AGENTES DE IA",
+        text: "Se a sua empresa começasse amanhã a delegar tarefas a agentes de IA, qual seria a sua situação?",
+        options: [
+            { text: "A. Ainda não identificámos tarefas que poderiam ser delegadas.", score: 0 },
+            { text: "B. Já identificámos oportunidades, mas não definimos regras nem responsabilidades.", score: 1 },
+            { text: "C. Temos alguns processos definidos, com supervisão humana.", score: 2 },
+            { text: "D. Já utilizamos agentes em processos delimitados, com regras, validação e acompanhamento.", score: 3 }
+        ],
+        message: "O desafio já não está apenas em saber utilizar a IA. Está também em saber o que lhe podemos delegar, em que condições e com que limites.",
+        recommendation: "Identificar processos específicos para delegação à IA e estabelecer limites, regras e requisitos de supervisão."
+    },
+    {
+        id: 3, moment: 2,
+        title: "VISIBILIDADE DAS FERRAMENTAS",
+        text: "A sua empresa sabe que ferramentas de IA estão a ser utilizadas pelos colaboradores?",
+        options: [
+            { text: "A. Não sabemos que ferramentas estão a ser utilizadas.", score: 0 },
+            { text: "B. Conhecemos algumas, mas não temos uma visão completa.", score: 1 },
+            { text: "C. Existe uma lista de ferramentas autorizadas, mas não acompanhamos a sua utilização.", score: 2 },
+            { text: "D. Temos ferramentas autorizadas e mecanismos de acompanhamento da sua utilização.", score: 3 }
+        ],
+        message: "O maior risco não é os colaboradores utilizarem IA. É a empresa desconhecer como e com que ferramentas a estão a utilizar.",
+        recommendation: "Mapear as ferramentas de IA utilizadas internamente e rever mecanismos de autorização e acompanhamento."
+    },
+    {
+        id: 4, moment: 2,
+        title: "PARTILHA DE INFORMAÇÃO",
+        text: "A sua empresa sabe que informação está a ser partilhada com as ferramentas de IA?",
+        options: [
+            { text: "A. Não temos conhecimento nem mecanismos de controlo.", score: 0 },
+            { text: "B. Existem recomendações informais, mas sem procedimentos definidos.", score: 1 },
+            { text: "C. Temos regras para a partilha de informação, mas a sua aplicação não é verificada regularmente.", score: 2 },
+            { text: "D. Temos regras, classificação de dados e mecanismos de controlo adequados.", score: 3 }
+        ],
+        message: "Não basta confiar que os colaboradores sabem proteger a informação. É necessário definir o que pode ser partilhado, com que ferramentas e em que condições.",
+        recommendation: "Classificar a informação empresarial e definir regras estritas de partilha com sistemas de Inteligência Artificial."
+    },
+    {
+        id: 5, moment: 2,
+        title: "RESPONSABILIDADE",
+        text: "Se a IA produzir uma decisão errada com impacto na empresa, estão definidas as responsabilidades?",
+        options: [
+            { text: "A. Não existem responsabilidades definidas.", score: 0 },
+            { text: "B. A responsabilidade depende de quem utiliza a ferramenta.", score: 1 },
+            { text: "C. Existem responsáveis definidos para algumas utilizações, mas não há critérios uniformes de validação.", score: 2 },
+            { text: "D. Existem responsáveis, regras de validação e procedimentos de resposta a incidentes.", score: 3 }
+        ],
+        message: "Podemos delegar tarefas à inteligência artificial, mas não podemos delegar a responsabilidade pelas consequências das decisões.",
+        recommendation: "Atribuir responsáveis claros para as saídas da IA e estabelecer procedimentos de validação humana obrigatória."
+    },
+    {
+        id: 6, moment: 3,
+        title: "ADOÇÃO ATUAL",
+        text: "Qual das seguintes situações descreve melhor a utilização atual da IA na sua empresa?",
+        options: [
+            { text: "A. Ainda não utilizamos IA de forma relevante.", score: 0 },
+            { text: "B. Alguns colaboradores utilizam IA por iniciativa própria.", score: 1 },
+            { text: "C. A empresa disponibiliza ferramentas, mas a utilização é pouco coordenada.", score: 2 },
+            { text: "D. A IA já está integrada em algumas atividades e processos, com orientação empresarial.", score: 3 }
+        ],
+        message: "A diferença não está apenas em utilizar IA, mas em passar da iniciativa individual para uma utilização estratégica, coordenada e capaz de gerar valor para a empresa.",
+        recommendation: "Transitar de iniciativas isoladas para uma estratégia empresarial coordenada de adoção da Inteligência Artificial."
+    },
+    {
+        id: 7, moment: 3,
+        title: "EVOLUÇÃO EM 2026",
+        text: "Qual foi a evolução da sua empresa no uso da inteligência artificial durante o ano de 2026?",
+        options: [
+            { text: "A. Ainda não iniciámos a utilização da IA.", score: 0 },
+            { text: "B. Começámos a experimentar ferramentas, sobretudo por iniciativa individual.", score: 1 },
+            { text: "C. Passámos a utilizar IA regularmente em algumas atividades, mas sem integração estruturada.", score: 2 },
+            { text: "D. Implementámos soluções de IA em processos definidos, com orientação e acompanhamento.", score: 3 },
+            { text: "E. Expandimos a utilização da IA, com processos redesenhados e resultados avaliados.", score: 4 }
+        ],
+        message: "O verdadeiro progresso não se mede pelo número de ferramentas de IA que uma empresa utiliza, mas pela forma como as integra no seu trabalho e transformam essa utilização em resultados.",
+        recommendation: "Integrar estruturalmente a IA nas rotinas de trabalho, avaliando sistematicamente a evolução e os resultados alcançados."
+    },
+    {
+        id: 8, moment: 4,
+        title: "PREPARAÇÃO DOS DADOS",
+        text: "Antes de partilhar dados empresariais com ferramentas de IA, os colaboradores sabem identificar e retirar a informação desnecessária ou sensível?",
+        options: [
+            { text: "A. Não existe formação ou orientação sobre esta prática.", score: 0 },
+            { text: "B. Alguns colaboradores fazem-no por iniciativa própria.", score: 1 },
+            { text: "C. Existem orientações e formação, mas a sua aplicação não é consistente.", score: 2 },
+            { text: "D. Os colaboradores são capacitados e existem procedimentos para verificar a adequação dos dados partilhados.", score: 3 }
+        ],
+        message: "Proteger a informação começa antes de a partilhar com a IA. Não basta saber utilizar as ferramentas; é essencial saber que dados podem ser utilizados e como os preparar em segurança.",
+        recommendation: "Promover formação contínua sobre minimização, proteção e anonimização de dados antes da sua partilha."
+    },
+    {
+        id: 9, moment: 5,
+        title: "COMPETÊNCIAS",
+        text: "Se amanhã a sua empresa disponibilizasse ferramentas avançadas de IA a todos os colaboradores, o que aconteceria?",
+        options: [
+            { text: "A. A maioria teria dificuldade em perceber como aplicá-las ao seu trabalho.", score: 0 },
+            { text: "B. Os colaboradores começariam a experimentar, mas sem orientação ou critérios comuns.", score: 1 },
+            { text: "C. Algumas equipas conseguiriam utilizá-las eficazmente, mas existiriam diferenças significativas de competências.", score: 2 },
+            { text: "D. As equipas teriam formação adequada às suas funções e capacidade para utilizar, avaliar e supervisionar os resultados.", score: 3 }
+        ],
+        message: "Disponibilizar inteligência artificial não significa desenvolver competências. O verdadeiro investimento está em preparar as pessoas para a utilizar com autonomia, sentido crítico e responsabilidade.",
+        recommendation: "Desenvolver programas de formação prática específicos por função, centrados no uso crítico e autónomo da IA."
+    },
+    {
+        id: 10, moment: 5,
+        title: "TRANSFORMAÇÃO DE PROCESSOS",
+        text: "Se retirássemos amanhã todas as ferramentas de IA da sua empresa, o que mudaria realmente na forma como o trabalho é realizado?",
+        options: [
+            { text: "A. Praticamente nada, porque a IA ainda não faz parte das atividades habituais.", score: 0 },
+            { text: "B. Algumas tarefas demorariam mais tempo, mas os processos continuariam iguais.", score: 1 },
+            { text: "C. Algumas equipas perderiam melhorias relevantes de produtividade e eficiência.", score: 2 },
+            { text: "D. Vários processos teriam de ser reorganizados, porque a IA já está integrada na forma como a empresa funciona.", score: 3 }
+        ],
+        message: "Uma empresa não se transforma por fazer as mesmas tarefas mais depressa. Transforma-se quando repensa a forma de trabalhar e utiliza a IA para criar novas capacidades e resultados.",
+        recommendation: "Identificar processos-piloto estratégicos para redesenhar de raiz utilizando as capacidades da inteligência artificial."
+    },
+    {
+        id: 11, moment: 6,
+        title: "CRIAÇÃO DE VALOR",
+        text: "Quando a sua empresa implementa uma solução de IA, como determina se o investimento está realmente a gerar valor?",
+        options: [
+            { text: "A. Não existem critérios definidos para avaliar os resultados.", score: 0 },
+            { text: "B. A avaliação baseia-se sobretudo na perceção de que os colaboradores trabalham mais depressa.", score: 1 },
+            { text: "C. São medidos alguns indicadores de eficiência, mas sem uma comparação sistemática com a situação anterior.", score: 2 },
+            { text: "D. São definidos indicadores antes da implementação, avaliando eficiência, qualidade, riscos e impacto nos resultados do negócio.", score: 3 }
+        ],
+        message: "O verdadeiro retorno da IA não está no tempo que parece poupar, mas nas melhorias que a empresa consegue medir, demonstrar e transformar em valor para o negócio.",
+        recommendation: "Definir indicadores precisos e uma situação inicial ('baseline') de comparação antes de implementar soluções de IA."
+    }
+];
+
+const totalMoments = 6;
+const levels = [
+    { max: 25, label: "Preparação Inicial", desc: "A sua empresa está a dar os primeiros passos. É crucial construir alicerces de proteção de dados e alfabetização em IA." },
+    { max: 50, label: "Preparação Emergente", desc: "Já existem iniciativas, mas carecem de alinhamento e regras. É o momento de coordenar esforços e definir responsabilidades." },
+    { max: 75, label: "Preparação em Desenvolvimento", desc: "A IA já faz parte das operações, com regras estabelecidas. O foco deve ser a expansão segura e o redesenho de processos." },
+    { max: 100, label: "Preparação Consolidada", desc: "Existe uma abordagem estratégica e estruturada. O objetivo é manter o acompanhamento rigoroso e a medição do valor gerado." }
+];
+
+/* ==========================================
+   STATE MANAGEMENT
+   ========================================== */
+let appState = {
+    participantId: null,
+    currentScreen: 'home', // 'home', 'moment', 'message', 'results'
+    currentQuestionIndex: 0,
+    answers: {} // { qId: optionIndex }
+};
+
+// Load state from local storage
+function loadState() {
+    let saved = null;
+    try { saved = localStorage.getItem('skolae_ia_diagnostic'); } catch (e) {}
+    try {
+        if (saved) {
+            appState = { ...appState, ...JSON.parse(saved) };
+        }
+    } catch (e) {}
+    if (!appState.participantId) {
+        appState.participantId = 'USR-' + Math.random().toString(36).substr(2, 9).toUpperCase();
+    }
+}
+
+function saveState() {
+    try {
+        localStorage.setItem('skolae_ia_diagnostic', JSON.stringify({
+            participantId: appState.participantId,
+            currentScreen: appState.currentScreen,
+            currentQuestionIndex: appState.currentQuestionIndex,
+            answers: appState.answers
+        }));
+    } catch (e) { /* armazenamento indisponível: a app continua a funcionar em memória */ }
+}
+
+/* ==========================================
+   CORE LOGIC & ROUTING
+   ========================================== */
+function init() {
+    loadState();
+    render();
+}
+
+function resetApp() {
+    try { localStorage.removeItem('skolae_ia_diagnostic'); } catch (e) {}
+    appState = {
+        participantId: 'USR-' + Math.random().toString(36).substr(2, 9).toUpperCase(),
+        currentScreen: 'home',
+        currentQuestionIndex: 0,
+        answers: {}
+    };
+    window.scrollTo(0, 0);
+    render();
+}
+
+function startDiagnostic() {
+    appState.currentScreen = 'moment';
+    
+    // Find the right question to start/resume
+    let targetIndex = 0;
+    for (let i = 0; i < questions.length; i++) {
+        if (appState.answers[questions[i].id] === undefined) {
+            targetIndex = i;
+            break;
+        }
+        if (i === questions.length - 1) {
+            // All answered
+            appState.currentScreen = 'results';
+        }
+    }
+    
+    appState.currentQuestionIndex = appState.currentScreen === 'moment' ? targetIndex : appState.currentQuestionIndex;
+    saveState();
+    window.scrollTo(0, 0); // Volta ao topo ao mudar de ecrã
+    render();
+}
+
+function submitAnswer(qId, optionIndex) {
+    appState.answers[qId] = optionIndex;
+    appState.currentScreen = 'message';
+    saveState();
+    window.scrollTo(0, 0);
+    render();
+}
+
+function nextAction() {
+    const nextQIndex = appState.currentQuestionIndex + 1;
+    
+    if (nextQIndex < questions.length) {
+        appState.currentQuestionIndex = nextQIndex;
+        appState.currentScreen = 'moment';
+    } else {
+        // Finished all questions
+        appState.currentScreen = 'results';
+    }
+    
+    saveState();
+    window.scrollTo(0, 0);
+    render();
+}
+
+/* ==========================================
+   SCORING LOGIC
+   ========================================== */
+function calculateResults() {
+    let obtainedPoints = 0;
+    let maxPoints = 0;
+    let answeredCount = 0;
+    let categoryScores = [];
+
+    questions.forEach(q => {
+        const ansIndex = appState.answers[q.id];
+        if (ansIndex !== undefined) {
+            answeredCount++;
+            const points = q.options[ansIndex].score;
+            obtainedPoints += points;
+            // Q7 has max 4 points, others max 3
+            const qMax = Math.max(...q.options.map(o => o.score));
+            maxPoints += qMax;
+            
+            categoryScores.push({
+                id: q.id,
+                title: q.title,
+                points: points,
+                max: qMax,
+                percentage: (points / qMax) * 100,
+                recommendation: q.recommendation
+            });
+        }
+    });
+
+    const isComplete = answeredCount >= 7; // Minimum threshold
+    const finalScore = isComplete ? Math.round((obtainedPoints / maxPoints) * 100) : null;
+    
+    let classification = null;
+    if (isComplete) {
+        classification = levels.find(l => finalScore <= l.max);
+    }
+
+    // Sort to find strengths and weaknesses
+    categoryScores.sort((a, b) => b.percentage - a.percentage);
+    const strengths = categoryScores.slice(0, 3);
+    const weaknesses = [...categoryScores].sort((a, b) => a.percentage - b.percentage).slice(0, 3);
+
+    return { isComplete, finalScore, classification, strengths, weaknesses, answeredCount };
+}
+
+/* ==========================================
+   RENDERERS
+   ========================================== */
+function render() {
+    const container = document.getElementById('app-container');
+    container.innerHTML = ''; // Clear
+
+    switch (appState.currentScreen) {
+        case 'home': container.innerHTML = getHomeHTML(); break;
+        case 'moment': container.innerHTML = getQuestionHTML(); setupQuestionListeners(); break;
+        case 'message': container.innerHTML = getMessageHTML(); break;
+        case 'results': container.innerHTML = getResultsHTML(); break;
+    }
+}
+
+function getHomeHTML() {
+    // Removido "my-auto" para não bloquear o scroll no telemóvel
+    return `
+        <div class="fade-in bg-skolae-dark rounded-2xl p-6 md:p-8 border border-gray-800 shadow-2xl text-center mt-4">
+            <h1 class="text-2xl md:text-3xl font-bold mb-4 leading-tight">A SUA EMPRESA ESTÁ <span class="text-skolae-orange">PREPARADA PARA A IA?</span></h1>
+            <p class="text-gray-300 text-sm md:text-base mb-6 leading-relaxed font-light">
+                "Descubra como a sua organização está a transformar o potencial da inteligência artificial em valor."
+            </p>
+            <div class="bg-black/50 rounded-xl p-5 mb-8 text-left border border-gray-800">
+                <p class="text-sm text-gray-300 mb-3"><i class="fas fa-info-circle text-skolae-orange mr-2"></i> Ao longo desta experiência, vai descobrir como a sua empresa está preparada para utilizar inteligência artificial, proteger a informação, desenvolver competências e criar valor.</p>
+                <ul class="text-sm text-gray-400 space-y-2 mt-4 ml-1">
+                    <li><i class="fas fa-list-ol mr-2 opacity-70"></i> 11 perguntas em 6 etapas</li>
+                    <li><i class="far fa-clock mr-2 opacity-70"></i> 4 a 6 minutos no total</li>
+                    <li><i class="fas fa-user-secret mr-2 opacity-70"></i> Participação 100% anónima</li>
+                </ul>
+            </div>
+            <button onclick="startDiagnostic()" class="w-full bg-skolae-orange hover:bg-skolae-hover text-black font-semibold text-lg py-4 rounded-xl transition-all shadow-[0_0_15px_rgba(255,156,37,0.3)] hover:shadow-[0_0_25px_rgba(255,156,37,0.5)] transform hover:-translate-y-0.5">
+                Iniciar Diagnóstico
+            </button>
+            <p class="text-xs text-gray-500 mt-5 italic">
+                Nota: As respostas representam a sua perceção e não constituem uma auditoria empresarial.
+            </p>
+        </div>
+    `;
+}
+
+function getQuestionHTML() {
+    const q = questions[appState.currentQuestionIndex];
+    const totalQ = questions.length;
+    const currentNum = appState.currentQuestionIndex + 1;
+    const progress = ((currentNum - 1) / totalQ) * 100;
+    
+    const prevAnswer = appState.answers[q.id];
+
+    let optionsHTML = q.options.map((opt, idx) => `
+        <label class="block cursor-pointer relative slide-up" style="animation-delay: ${idx * 0.1}s">
+            <input type="radio" name="q${q.id}" value="${idx}" class="peer sr-only option-radio" ${prevAnswer === idx ? 'checked' : ''}>
+            <div class="p-4 rounded-xl border border-gray-700 bg-black/40 hover:bg-gray-800 transition-all flex items-start gap-4">
+                <div class="mt-0.5 w-5 h-5 rounded-full border-2 border-gray-500 flex-shrink-0 radio-circle transition-colors flex items-center justify-center">
+                    <div class="w-2.5 h-2.5 rounded-full bg-black scale-0 transition-transform peer-checked:scale-100"></div>
+                </div>
+                <span class="text-sm md:text-base text-gray-200 font-medium">${opt.text}</span>
+            </div>
+        </label>
+    `).join('');
+
+    return `
+        <div class="fade-in flex flex-col pt-4">
+            <div class="mb-6 flex justify-between items-end">
+                <div>
+                    <span class="text-skolae-orange text-xs font-bold tracking-widest uppercase mb-1 block">Momento ${q.moment}</span>
+                    <h3 class="text-gray-400 text-sm">Pergunta ${currentNum} de ${totalQ}</h3>
+                </div>
+            </div>
+            
+            <div class="w-full bg-gray-800 rounded-full h-1.5 mb-8">
+                <div class="bg-skolae-orange h-1.5 rounded-full transition-all duration-500" style="width: ${progress}%"></div>
+            </div>
+
+            <div class="bg-skolae-dark border border-gray-800 rounded-2xl p-6 md:p-8 shadow-xl mb-6">
+                <h2 class="text-xl md:text-2xl font-semibold mb-2">${q.title}</h2>
+                <p class="text-gray-300 mb-6 text-sm md:text-base">${q.text}</p>
+                
+                <div class="space-y-3" id="options-container">
+                    ${optionsHTML}
+                </div>
+            </div>
+
+            <button id="btn-confirm" class="w-full bg-skolae-orange hover:bg-skolae-hover text-black font-semibold text-lg py-4 rounded-xl transition-all shadow-lg mt-4 disabled:opacity-50 disabled:cursor-not-allowed" ${prevAnswer === undefined ? 'disabled' : ''}>
+                Confirmar Resposta
+            </button>
+        </div>
+    `;
+}
+
+function setupQuestionListeners() {
+    const radios = document.querySelectorAll('.option-radio');
+    const btn = document.getElementById('btn-confirm');
+    
+    radios.forEach(radio => {
+        radio.addEventListener('change', () => {
+            btn.disabled = false;
+        });
+    });
+
+    btn.addEventListener('click', () => {
+        const selected = document.querySelector('.option-radio:checked');
+        if (selected) {
+            const qId = questions[appState.currentQuestionIndex].id;
+            submitAnswer(qId, parseInt(selected.value));
+        }
+    });
+}
+
+function getMessageHTML() {
+    const q = questions[appState.currentQuestionIndex];
+    return `
+        <div class="fade-in bg-skolae-dark border-l-4 border-skolae-orange rounded-r-2xl p-8 shadow-2xl flex flex-col justify-center items-center text-center mt-8">
+            <div class="w-16 h-16 rounded-full bg-skolae-orange/10 flex items-center justify-center mb-6">
+                <i class="fas fa-lightbulb text-3xl text-skolae-orange"></i>
+            </div>
+            <p class="text-lg md:text-xl font-medium text-gray-200 leading-relaxed mb-10 italic">
+                "${q.message}"
+            </p>
+            <button onclick="nextAction()" class="w-full bg-white hover:bg-gray-200 text-black font-semibold text-base py-4 rounded-xl transition-colors">
+                Continuar <i class="fas fa-arrow-right ml-2"></i>
+            </button>
+        </div>
+    `;
+}
+
+function getResultsHTML() {
+    const res = calculateResults();
+    
+    if (!res.isComplete) {
+        return `
+            <div class="fade-in bg-skolae-dark rounded-2xl p-8 border border-gray-800 text-center mt-8">
+                <i class="fas fa-exclamation-triangle text-4xl text-yellow-500 mb-4"></i>
+                <h2 class="text-xl font-bold mb-2">Diagnóstico Incompleto</h2>
+                <p class="text-gray-400 mb-6">Respondeu a ${res.answeredCount} de ${questions.length} perguntas. São necessárias pelo menos 7 respostas para calcular um perfil fidedigno.</p>
+                <button onclick="appState.currentScreen='home'; render();" class="w-full bg-white hover:bg-gray-200 text-black font-semibold text-base py-4 rounded-xl transition-colors">
+                    Voltar ao Início
+                </button>
+            </div>
+        `;
+    }
+
+    const weaknessesHTML = res.weaknesses.map(w => `
+        <div class="mb-4 bg-black/30 p-4 rounded-lg border-l-2 border-skolae-orange print-bg-white">
+            <h4 class="font-bold text-white text-sm mb-1 print-text-black"><i class="fas fa-exclamation-circle text-skolae-orange mr-2"></i> ${w.title}</h4>
+            <p class="text-sm text-gray-400 mb-2 print-text-black">Prioridade de melhoria identificada.</p>
+            <p class="text-sm text-skolae-orange bg-skolae-orange/10 p-2 rounded inline-block w-full">
+                <i class="fas fa-arrow-right mr-1 text-xs"></i> <strong>Recomendação:</strong> ${w.recommendation}
+            </p>
+        </div>
+    `).join('');
+
+    return `
+        <div id="pdf-content" class="fade-in bg-skolae-dark rounded-2xl p-6 md:p-8 border border-gray-800 shadow-2xl mb-8 mt-4 print-bg-white">
+            <div class="text-center mb-8">
+                <h2 class="text-skolae-orange font-bold text-xs tracking-widest uppercase mb-2">O Diagnóstico da sua Empresa</h2>
+                <div class="flex justify-center items-center my-6">
+                    <div class="relative w-32 h-32 flex items-center justify-center rounded-full bg-black border-4 border-gray-800 print-bg-white">
+                        <svg class="absolute inset-0 w-full h-full transform -rotate-90">
+                            <circle cx="60" cy="60" r="56" fill="none" stroke="currentColor" stroke-width="8" class="text-gray-800"></circle>
+                            <circle cx="60" cy="60" r="56" fill="none" stroke="#FF9C25" stroke-width="8" stroke-dasharray="351" stroke-dashoffset="${351 - (351 * res.finalScore) / 100}" class="transition-all duration-1000 ease-out"></circle>
+                        </svg>
+                        <span class="text-3xl font-bold print-text-black">${res.finalScore}<span class="text-sm text-gray-500">%</span></span>
+                    </div>
+                </div>
+                <h3 class="text-2xl font-bold text-white mb-2 print-text-black">${res.classification.label}</h3>
+                <p class="text-sm text-gray-400 max-w-sm mx-auto print-text-black">${res.classification.desc}</p>
+            </div>
+
+            <hr class="border-gray-800 my-6">
+
+            <div class="mb-8">
+                <h4 class="text-sm font-bold text-gray-300 uppercase tracking-wider mb-4 flex items-center print-text-black">
+                    <i class="fas fa-tools mr-2 text-skolae-orange"></i> Prioridades de Ação Recomendadas
+                </h4>
+                <div class="text-left">
+                    ${weaknessesHTML}
+                </div>
+            </div>
+
+            <div class="bg-gray-900/50 p-4 rounded-xl border border-gray-800 text-xs text-gray-500 text-center print-bg-white print-text-black">
+                Os resultados apresentados resultam de um autodiagnóstico indicativo e não substituem uma auditoria formal ou aconselhamento especializado. ID da Sessão: ${appState.participantId}
+            </div>
+        </div>
+
+        <button onclick="downloadPDF()" class="w-full bg-white hover:bg-gray-200 text-black font-bold text-lg py-4 rounded-xl transition-all shadow-lg flex justify-center items-center mb-3 no-print">
+            <i class="fas fa-file-pdf mr-2"></i> Guardar o meu Diagnóstico
+        </button>
+        <button id="btn-copy" onclick="copyResults()" class="w-full bg-skolae-dark border border-gray-700 hover:bg-gray-800 text-white font-semibold text-base py-3 rounded-xl transition-colors flex justify-center items-center mb-3 no-print">
+            <i class="far fa-copy mr-2"></i> Copiar resumo
+        </button>
+        <button onclick="resetApp()" class="w-full text-gray-400 hover:text-white text-sm py-3 mb-6 no-print">
+            <i class="fas fa-rotate-left mr-2"></i> Refazer o diagnóstico
+        </button>
+    `;
+}
+
+function downloadPDF() {
+    try { window.print(); } catch (e) { copyResults(); }
+}
+
+function copyResults() {
+    const res = calculateResults();
+    if (!res.isComplete) return;
+    const lines = [
+        'Diagnóstico IA – Skolae Experience Day 2026',
+        'Nível: ' + res.classification.label + ' (' + res.finalScore + '%)',
+        res.classification.desc,
+        '',
+        'Prioridades de ação recomendadas:',
+        ...res.weaknesses.map((w, i) => (i + 1) + '. ' + w.title + ' – ' + w.recommendation)
+    ].join('\n');
+    const btn = document.getElementById('btn-copy');
+    const done = ok => { if (btn) btn.innerHTML = ok ? '<i class="fas fa-check mr-2"></i> Copiado' : 'Não foi possível copiar'; };
+    try {
+        navigator.clipboard.writeText(lines).then(() => done(true), () => done(false));
+    } catch (e) { done(false); }
+}
+
+// Start app
+try { init(); } catch (e) {
+    document.getElementById('app-container').innerHTML =
+        '<div class="bg-skolae-dark rounded-2xl p-6 mt-8 text-center border border-gray-800"><p class="mb-4">Ocorreu um erro ao carregar o diagnóstico.</p><button onclick="try{localStorage.clear()}catch(e){};location.reload()" class="w-full bg-skolae-orange text-black font-semibold py-3 rounded-xl">Recarregar</button></div>';
+}
+</script>
+</body>
+</html>
